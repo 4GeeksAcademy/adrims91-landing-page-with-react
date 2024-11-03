@@ -1,6 +1,5 @@
 import React from "react";
 import PropTypes from "prop-types";
-
 const NavBar = (props) => {
     return (
         <nav className="navbar navbar-expand-md bg-dark">
