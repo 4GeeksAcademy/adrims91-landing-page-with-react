@@ -6,8 +6,22 @@ import ReactDOM from "react-dom/client";
 import "../styles/index.css";
 
 //import your own components
-import Home from "./component/home.jsx";
+import NavBar from "./component/NavBar";
+const menu = [
+    {label: 'Home', url: '#', extraClass: 'text-white'},
+    {label: 'About', url: '#', extraClass: 'text-white-50'},
+    {label: 'Services', url: '#', extraClass: 'text-white-50'},
+    {label: 'Contact', url: '#', extraClass: 'text-white-50'}
+]
 
 //render your react application
-ReactDOM.createRoot(document.getElementById('app')).render(<Home/>);
+const app = ReactDOM.createRoot(document.getElementById('app'));
 
+
+
+app.render(<NavBar
+    items={menu}
+    brand={'Start Bootstrap'}
+    brandUrl={'#'}
+/>)
+    
