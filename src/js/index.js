@@ -6,30 +6,11 @@ import ReactDOM from "react-dom/client";
 import "../styles/index.css";
 
 //import your own components
-import NavBar from "./component/NavBar";
-import Jumbotron from "./component/Jumbotron";
-import Cards from "./component/Cards";
+import App from './component/app'
 
 //render your react application
 const app = ReactDOM.createRoot(document.getElementById('app'));
 app.render(
-    <div className="container">
-    <NavBar
-      items={[
-        {label: 'Home', url: '#', extraClass: 'text-white'},
-        {label: 'About', url: '#', extraClass: 'text-white-50'},
-        {label: 'Services', url: '#', extraClass: 'text-white-50'},
-        {label: 'Contact', url: '#', extraClass: 'text-white-50'}
-    ]}
-      brand={'Start Bootstrap'}
-      brandUrl={'#'}
-    />
-    <Jumbotron 
-      heading={'A Warn Welcome!'}
-      lead={'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum, ducimus sequi? Laudantium fugit aliquid laborum quis quidem doloribus, explicabo, quasi beatae, molestiae aliquam veniam delectus unde quaerat voluptatem ipsum itaque.'}
-      button={'Call to action!'}
-    />
-    <Cards/>
-  </div>
+    <App />
 )
     
