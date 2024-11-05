@@ -3,18 +3,18 @@ import PropTypes from "prop-types";
 
 const Cards = (props) => {
   return (
-    <div className="justify-content-start m-4">
-      <div className="bg-light p-5">
-        <img src={props.image} alt="500 x 325" className="img-fluid" />
-      </div>
-      <div>
-        <h2>Card Title</h2>
-        <p className="lead">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-          sint suscipit esse fuga adipisci, quaerat quidem iure explicabo
-          perspiciatis doloremque magnam reiciendis incidunt ad iste, quibusdam
-          voluptate tempore inventore optio.
-        </p>
+    <div className="container">
+      <div className="card mb-4 mx-4">
+        <div className="bg-secondary pb-5 text-center align-items-center">
+          <img src={props.image} className="card-img-top" alt="500 x 325" />
+        </div>
+        <div className="card-body">
+          <h5 className="card-title">{props.title}</h5>
+          <p className="card-text">{props.description}</p>
+          <a href="#" className="btn btn-primary">
+            {props.button}
+          </a>
+        </div>
       </div>
     </div>
   );
